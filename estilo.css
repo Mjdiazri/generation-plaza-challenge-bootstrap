@@ -5,11 +5,11 @@
   font-style: normal;
 }
 
-.card-title{
-    color: rgb(3, 56, 25);
-    font-family:"Henny Penny" ;
+#boton{
+ background-color: rgb(43, 8, 75) ;
 }
 
-.card-text{
-    color: rgb(4, 88, 24);
+ #footer-id{
+    background-color: rgb(43, 8, 75);
+    color: orangered;
 }
