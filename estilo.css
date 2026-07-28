@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
+.henny-penny-regular {
+  font-family: "Henny Penny", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.card-title{
+    color: rgb(3, 56, 25);
+    font-family:"Henny Penny" ;
+}
+
+.card-text{
+    color: rgb(4, 88, 24);
+}
