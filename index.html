@@ -8,14 +8,15 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous">
-    <link rel="stylesheet" href="estilo.css">
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="estilo.css" />
   </head>
   <body>
     <header>
-      <div class="container">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-          <div class="container-fluid">
+      <div class="container p-0" id="header-cont">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary menu p-0" >
+          <div class="container-fluid" id="navbar">
             <a class="navbar-brand" href="#">Plaza Sabores</a>
             <button
               class="navbar-toggler"
@@ -33,11 +34,12 @@
                 <a
                   class="nav-link active"
                   aria-current="page"
+                  id="navlink"
                   href="./index.html"
                   >Home</a
                 >
-                <a class="nav-link" href="./productos.html">Productos</a>
-                <a class="nav-link" href="./contactenos.html">Contactecnos</a>
+                <a class="nav-link" id="navlink" href="./productos.html">Productos</a>
+                <a class="nav-link" id="navlink" href="./contactenos.html">Contactenos</a>
               </div>
             </div>
           </div>
@@ -50,54 +52,60 @@
         <img
           src="https://pencilwala.in/wp-content/uploads/2025/10/360_F_609312487_cnMcTSARF8C4RMMDqkjkYxBBWE3MUH69.jpg"
           class="card-img"
-          alt="Imagen de vegetales"/>
+          alt="Imagen de vegetales"
+        />
         <div class="card-img-overlay">
           <h1 class="card-title">PLAZA SABORES</h1>
           <p class="card-text">Lo mejor del campo a su paladar</p>
-          <a href="./productos.html" class="btn btn-warning">Conocer productos</a>
+          <a href="./productos.html" class="btn btn-warning"
+            >Conocer productos</a
+          >
         </div>
       </div>
+      <!--Seccion de cards-->
       <section>
-        <div class="row row-cols-1 row-cols-md-2 g-4">
-          <div class="col">
-            <div class="card">
-              <img src="...\\" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Frutas y Verduras</h5>
-                <p class="card-text">Del campo a tu mesa, frescura pura.</p>
+        <div class="container my-5">
+          <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+              <div class="card">
+                <img id="img-main" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdzGJYuP7ZmCJFHS8STyL8Hxv8_DaoQqKbg62HqtP76Q&s=10" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Frutas y Verduras</h5>
+                  <p class="card-text">Del campo a tu mesa, frescura pura.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img id="img-main" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQadq25U-FZo0IccSEE7LZkyQZzlNW2gO0jYlNuKeooyQ&s=10" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Panadería</h5>
+                  <p class="card-text">Horneado hoy, con manos artesanas..</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img id="img-main" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThXHDJpmi8gEwX4EWRXAooSWwcY-yua-2d-6s1Gu_CDA&s=10" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Restaurante</h5>
+                  <p class="card-text">El verdadero sazón que une familias.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img id="img-main" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN7tLnGjzM28vYeXFlMouupLeuyvEOfhjTlkNvFyxrJQ&s=10" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Jugos y Cafe</h5>
+                  <p class="card-text">
+                    El aroma perfecto de energía y vitalidad en cada gota.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="card">
-              <img src="..." class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Panadería</h5>
-                <p class="card-text">Horneado hoy, con manos artesanas..</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img src="..." class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Restaurante</h5>
-                <p class="card-text">El verdadero sazón que une familias.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img src="..." class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Jugos y Cafe</h5>
-                <p class="card-text">
-                  El aroma perfecto de energía y vitalidad en cada gota.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+         </div class="container my-5"> 
       </section>
     </main>
     <footer>
@@ -108,9 +116,8 @@
           <p class="card-text">
             Ubicacion: Calle falsa 123 || Telefono: 019489483700
           </p>
-          <a href="./contactenos.html" class="btn btn-primary">Contactenos</a>
+          <a href="./contactenos.html" class="btn btn-warning">Contactenos</a>
         </div>
-        <div class="card-footer text-body-secondary"></div>
       </div>
     </footer>
 

@@ -5,11 +5,25 @@
   font-style: normal;
 }
 
-#boton{
- background-color: rgb(43, 8, 75) ;
+header{
+  background-color: rgb(37, 15, 1);
+  border-bottom: white 2px solid;
+
+}
+#navbar, #footer-id, .navbar-brand, #navlink{
+    background-color: rgb(37, 15, 1);
+    color: orangered;    
 }
 
- #footer-id{
-    background-color: rgb(43, 8, 75);
-    color: orangered;
+
+#img-main{
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-img-overlay{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
 }
