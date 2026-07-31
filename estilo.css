@@ -27,3 +27,35 @@ header{
   flex-direction: column;
   align-items: end;
 }
+
+/*Estilo productos*/
+#titulo-productos{
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTldH2R_h-kN6UDyN-8VQvw_ixZdD0hp8eMg-p7bq-Lcg&s=10");
+  background-size: cover;  
+  background-color: rgba(37, 15, 1, 0.58);
+  
+}
+
+#seccion-productos{
+  background-color: rgba(37, 15, 1, 0.58);
+  padding: 2rem;
+
+}
+
+#titulo-banner{
+  font-weight: 900;
+  color: rgb(37, 15, 1);
+  -webkit-text-stroke: 0.5px white;
+  text-shadow: 0px 0px 0px rgb(16, 7, 7) ;
+
+}
+#parrafo-productos{
+  font-family: "Henny Penny";
+  font-weight: 100;
+  color: white;
+  
+}
+
+#botonProductos{
+  background:rgb(37, 15, 1) ;
+}
