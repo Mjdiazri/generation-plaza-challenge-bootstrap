@@ -10,12 +10,12 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estilo.css" />
   </head>
   <body>
     <header>
       <div class="container p-0" id="header-cont">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary menu p-0" >
+        <nav class="navbar navbar-expand-lg bg-body-tertiary menu p-0">
           <div class="container-fluid" id="navbar">
             <a class="navbar-brand" href="#">Plaza Sabores</a>
             <button
@@ -38,8 +38,12 @@
                   href="./index.html"
                   >Home</a
                 >
-                <a class="nav-link" id="navlink" href="./productos.html">Productos</a>
-                <a class="nav-link" id="navlink" href="./contactenos.html">Contactenos</a>
+                <a class="nav-link" id="navlink" href="./productos.html"
+                  >Productos</a
+                >
+                <a class="nav-link" id="navlink" href="./contactenos.html"
+                  >Contactenos</a
+                >
               </div>
             </div>
           </div>
@@ -50,66 +54,290 @@
     <main>
       <section>
         <div class="card text-center">
-          <div class="card-header"></div>
           <div class="card-body" id="titulo-productos">
-            <h2 class="card-title" id="titulo-banner">Nuestros Puestos</h2>
-            <p class="card-text" id="parrafo-productos">
-              Conoce los mejores productos y servicios que tenemos disponibles
-              para ti
-            </p>
-            <a href="#" class="btn btn-outline-secondary"  id="botonProductos">Hacer Pedido</a>
+            <div id="contenedorTexto">
+              <h2 class="card-title" id="titulo-banner">Nuestros Puestos</h2>
+              <p class="card-text" id="parrafo-productos">
+                Conoce los mejores productos y servicios que tenemos disponibles
+                para ti
+              </p>
+              <a href="./contactenos.html" class="btn btn-warning" id="botonProductos"
+                >Pedir productos</a
+              >
+            </div>
           </div>
-          <div class="card-footer text-body-secondary"></div>
         </div>
       </section>
       <section id="seccion-productos">
         <div class="container text-center">
-          <div class="row">
-            <div class="col-sm-2">
-              <nav class="nav flex-column">
-                <a class="nav-link active" aria-current="page" href="#">Frutas</a>
-                <a class="nav-link" href="#">Cafe</a>
-                <a class="nav-link" href="#">Panaderia</a>
-                <a class="nav-link" href="#">Jugos</a>
-                <a class="nav-link" href="#">Restaurante</a>
-              </nav>
+          <div class="row" >
+            <div class="col-sm-2 divAside">
+              <a
+                class="btn btn-warning linkAside btn-aside"
+                aria-current="page"
+                href="#"
+                >Frutas</a
+              >
+              <a class="btn btn-success linkAside btn-aside" href="#">Cafe</a>
+              <a class="btn btn-danger linkAside btn-aside" href="#">Panaderia</a>
+              <a class="btn btn-warning linkAside btn-aside" href="#">Jugos</a>
+              <a class="btn btn-success linkAside btn-aside" href="#"
+                >Restaurante</a
+              >
             </div>
 
             <div class="col-sm-10">
               <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
-                  <div class="card h-100">
-                    <img src="..." class="card-img-top" alt="..." />
-                    <div class="card-body">
+                  <div class="card h-100 cardFrutas">
+                    <!--Carrusel frutas-->
+                    <div id="carouselExampleIndicators" class="carousel slide">
+                      <div class="carousel-indicators">
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleIndicators"
+                          data-bs-slide-to="0"
+                          class="active"
+                          aria-current="true"
+                          aria-label="Slide 1"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleIndicators"
+                          data-bs-slide-to="1"
+                          aria-label="Slide 2"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleIndicators"
+                          data-bs-slide-to="2"
+                          aria-label="Slide 3"
+                        ></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjz-umbta_7bMHnGXOzWklIMWMpu5WG1rCavD2tkA_iA&s=10"
+                            class="d-block w-100"
+                            alt="..."
+                          />
+                        </div>
+                        <div class="carousel-item">
+                          <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrYmczTacx7XwkRLQYi4yQVuqd1IPwIqcuTNR1MBD5nw&s=10"
+                            class="d-block w-100"
+                            alt="..."
+                          />
+                        </div>
+                        <div class="carousel-item">
+                          <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKmCe7zuf5Tt4XscZgBh79o-v7oNppHNpIi8ws9hjsow&s=10"
+                            class="d-block w-100"
+                            alt="..."
+                          />
+                        </div>
+                      </div>
+                      <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev"
+                      >
+                        <span
+                          class="carousel-control-prev-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next"
+                      >
+                        <span
+                          class="carousel-control-next-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+
+                    <div class="card-body divFrutas">
                       <h5 class="card-title">Frutas</h5>
                       <p class="card-text">
                         Tenemos una gran variedad de frutas. Actualmente en
                         cosecha: Guanabana, Naranja, Manzana y Marañon.
                       </p>
-                      <button type="button" class="btn btn-outline-success">
+                      <button type="button" class="btn btn-success btn-5">
                         Hacer pedido
                       </button>
                     </div>
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card h-100">
-                    <img src="..." class="card-img-top" alt="..." />
+                  <div class="card h-100 cardPan">
+                    <!--Carrusel pan-->
+                    <div id="carouselPan" class="carousel slide">
+                      <div class="carousel-indicators">
+                        <button
+                          type="button"
+                          data-bs-target="#carouselPan"
+                          data-bs-slide-to="0"
+                          class="active"
+                          aria-current="true"
+                          aria-label="Slide 1"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#carouselPan"
+                          data-bs-slide-to="1"
+                          aria-label="Slide 2"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#carouselPan"
+                          data-bs-slide-to="2"
+                          aria-label="Slide 3"
+                        ></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiceOLSaXbzLHmfA_Ps1dfO6ZrfNZkHSEddxfda9z7XQ&s=10"
+                            class="d-block w-100"
+                            alt="..."
+                          />
+                        </div>
+                        <div class="carousel-item">
+                          <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5g_5t3lW4kaiZczhsvnkEJ9rJoKHrDwuN7k7VsfY2Zw&s=10"
+                            class="d-block w-100"
+                            alt="..."
+                          />
+                        </div>
+                        <div class="carousel-item">
+                          <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbX2cozqpp6KlizgMqiBpP_eC5dR5U_MWB1rWX3cDPQQ&s=10"
+                            class="d-block w-100"
+                            alt="..."
+                          />
+                        </div>
+                      </div>
+                      <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carouselPan"
+                        data-bs-slide="prev"
+                      >
+                        <span
+                          class="carousel-control-prev-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carouselPan"
+                        data-bs-slide="next"
+                      >
+                        <span
+                          class="carousel-control-next-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+
                     <div class="card-body">
                       <h5 class="card-title">Panaderia</h5>
                       <p class="card-text">
                         Diferentes panes elaborados de harina de maiz y masa
                         madre. Tambien se cuenta con bizcochos y postes.
                       </p>
-                      <button type="button" class="btn btn-outline-success">
+                      <button type="button" class="btn btn-warning btn-3">
                         Hacer pedido
                       </button>
                     </div>
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card h-100">
-                    <img src="..." class="card-img-top" alt="..." />
+                  <div class="card h-100 cardCofee">
+                    <!--Carrusel cafe-->
+
+                    <div id="carouselCafe" class="carousel slide">
+                      <div class="carousel-indicators">
+                        <button
+                          type="button"
+                          data-bs-target="#carouselCafe"
+                          data-bs-slide-to="0"
+                          class="active"
+                          aria-current="true"
+                          aria-label="Slide 1"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#carouselCafe"
+                          data-bs-slide-to="1"
+                          aria-label="Slide 2"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#carouselCafe"
+                          data-bs-slide-to="2"
+                          aria-label="Slide 3"
+                        ></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item">
+                          <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnc9u7EKCtLh_RQWHYlHMta1oYojMEDMzjMpjRmBaXSA&s=10"
+                            class="d-block w-100"
+                            alt="..."
+                          />
+                        </div>
+                        <div class="carousel-item active">
+                          <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN6BJBA20Rl5I7wpXP5n0T2qJj3DXYdM9-EPvj708TRw&s=10"
+                            class="d-block w-100"
+                            alt="..."
+                          />
+                        </div>
+                        <div class="carousel-item">
+                          <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrUak-0VED7XJ2UC4j2edXNVxhJNYt631Y9FH9m1DpBg&s=10"
+                            class="d-block w-100"
+                            alt="..."
+                          />
+                        </div>
+                      </div>
+                      <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carouselCafe"
+                        data-bs-slide="prev"
+                      >
+                        <span
+                          class="carousel-control-prev-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carouselCafe"
+                        data-bs-slide="next"
+                      >
+                        <span
+                          class="carousel-control-next-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+
                     <div class="card-body">
                       <h5 class="card-title">Cafe</h5>
                       <p class="card-text">
@@ -117,37 +345,180 @@
                         Risaralda). Presentaciones: Preparado | Bolsa libra |
                         Bolsa kilo.
                       </p>
-                      <button type="button" class="btn btn-outline-success">
+                      <button type="button" class="btn btn-danger btn-2">
                         Hacer pedido
                       </button>
                     </div>
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card h-100">
-                    <img src="..." class="card-img-top" alt="..." />
+                  <div class="card h-100 cardRestaurante">
+                    <!--Carrusel restaurante-->
+
+                    <div id="carouselRestaurante" class="carousel slide">
+                      <div class="carousel-indicators">
+                        <button
+                          type="button"
+                          data-bs-target="#carouselRestaurante"
+                          data-bs-slide-to="0"
+                          class="active"
+                          aria-current="true"
+                          aria-label="Slide 1"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#carouselRestaurante"
+                          data-bs-slide-to="1"
+                          aria-label="Slide 2"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#carouselRestaurante"
+                          data-bs-slide-to="2"
+                          aria-label="Slide 3"
+                        ></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item">
+                          <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvJHnrRhBWB_PiiZaZ6Tg7sswPa4e5bK6u6qNJBE1AJw&s=10"
+                            class="d-block w-100"
+                            alt="..."
+                          />
+                        </div>
+                        <div class="carousel-item">
+                          <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK0nrKWznvPjnkHokX_DohiilvMOiGOrSgF7W7wz95Vg&s=10"
+                            class="d-block w-100"
+                            alt="..."
+                          />
+                        </div>
+                        <div class="carousel-item active">
+                          <img
+                            src="https://www.aventurayturismo.org/wp-content/uploads/2018/11/picada-carne-llanera.jpg"
+                            class="d-block w-100"
+                            alt="..."
+                          />
+                        </div>
+                      </div>
+                      <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carouselRestaurante"
+                        data-bs-slide="prev"
+                      >
+                        <span
+                          class="carousel-control-prev-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carouselRestaurante"
+                        data-bs-slide="next"
+                      >
+                        <span
+                          class="carousel-control-next-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
                     <div class="card-body">
                       <h5 class="card-title">Restaurante</h5>
                       <p class="card-text">
-                        Le ofrecemos los mejores platos tipicos y a la carta del
-                        llano y Bogota. Ademas un delicioso Menu del dia .
+                        Le ofrecemos los mejores platos tipicos del llano y
+                        Bogota. Ademas un delicioso Menu del dia .
                       </p>
-                      <button type="button" class="btn btn-outline-success">
+                      <button type="button" class="btn btn-danger btn-6">
                         Hacer pedido
                       </button>
                     </div>
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card h-100">
-                    <img src="..." class="card-img-top" alt="..." />
+                  <div class="card h-100 cardJugos">
+                    <!--Carrusel jugos-->
+                    <div id="carouselJugos" class="carousel slide">
+                      <div class="carousel-indicators">
+                        <button
+                          type="button"
+                          data-bs-target="#carouselJugos"
+                          data-bs-slide-to="0"
+                          class="active"
+                          aria-current="true"
+                          aria-label="Slide 1"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#carouselJugos"
+                          data-bs-slide-to="1"
+                          aria-label="Slide 2"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#carouselJugos"
+                          data-bs-slide-to="2"
+                          aria-label="Slide 3"
+                        ></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQAfmdrGntFMJxtuxEhm0PgT9sVKPH87QYLeWkd4uItw&s=10"
+                            class="d-block w-100"
+                            alt="..."
+                          />
+                        </div>
+                        <div class="carousel-item">
+                          <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZutSj9CYul8AKeWZY0WjR5NdDf38KEo6nJMyyW1wFKA&s=10"
+                            class="d-block w-100"
+                            alt="..."
+                          />
+                        </div>
+                        <div class="carousel-item">
+                          <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7ZfiPhFkXGt_UPiURm6OcUTZCGMuDJ5ed6cmHZcmGxA&s=10"
+                            class="d-block w-100"
+                            alt="..."
+                          />
+                        </div>
+                      </div>
+                      <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carouselJugos"
+                        data-bs-slide="prev"
+                      >
+                        <span
+                          class="carousel-control-prev-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carouselJugos"
+                        data-bs-slide="next"
+                      >
+                        <span
+                          class="carousel-control-next-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
                     <div class="card-body">
                       <h5 class="card-title">Jugos</h5>
                       <p class="card-text">
                         Disfrute los mejores jugos naturales en agua o leche.
                         Disponible para envio al domicilio.
                       </p>
-                      <button type="button" class="btn btn-outline-success">
+                      <button type="button" class="btn btn-warning btn-1">
                         Hacer pedido
                       </button>
                     </div>
@@ -161,7 +532,6 @@
     </main>
     <footer>
       <div class="card text-center">
-        <div class="card-header"></div>
         <div class="card-body" id="footer-id">
           <h5 class="card-title">Plaza Sabores</h5>
           <p class="card-text">

@@ -30,32 +30,113 @@ header{
 
 /*Estilo productos*/
 #titulo-productos{
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTldH2R_h-kN6UDyN-8VQvw_ixZdD0hp8eMg-p7bq-Lcg&s=10");
+  background-image: url("https://pencilwala.in/wp-content/uploads/2025/10/360_F_609312487_cnMcTSARF8C4RMMDqkjkYxBBWE3MUH69.jpg") ;
   background-size: cover;  
   background-color: rgba(37, 15, 1, 0.58);
-  
+  background-position:bottom ;  
 }
 
 #seccion-productos{
-  background-color: rgba(37, 15, 1, 0.58);
-  padding: 2rem;
-
+  padding: 5vh 0vw;
 }
+
+#contenedorTexto{
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+  padding: 10px 20px;
+  display: inline-block;
+}
+
 
 #titulo-banner{
   font-weight: 900;
   color: rgb(37, 15, 1);
-  -webkit-text-stroke: 0.5px white;
+  -webkit-text-stroke: 0.6px white;
   text-shadow: 0px 0px 0px rgb(16, 7, 7) ;
-
-}
-#parrafo-productos{
-  font-family: "Henny Penny";
-  font-weight: 100;
-  color: white;
-  
 }
 
 #botonProductos{
-  background:rgb(37, 15, 1) ;
+  background-color: orangered;
+  border: 0.5px solid white;
 }
+
+
+.divAside{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-color: beige;
+  gap: 30px;
+}
+
+.linkAside{
+  width: 120px;
+  height: auto;
+  text-align: center;
+}
+
+.btn-aside{
+  background-color:rgb(37, 15, 1);
+  color: beige;
+}
+
+.btn-1{
+  background-color:white;
+  color:   rgb(5, 130, 24);
+}
+
+.btn-2{
+  background-color: white;
+  color:   rgb(37, 15, 1);
+}
+
+.btn-3{
+  background-color: white;
+  color:  rgb(161, 112, 6);
+}
+
+.btn-5{
+  background-color: white;
+  color: rgba(231, 51, 63);
+}
+
+.btn-6{
+  background-color: white;
+  color: rgb(142, 19, 2);
+}
+
+
+.cardFrutas{
+  background: rgba(231, 51, 63);
+  border: 2px solid rgb(231, 51, 63);
+  color: beige;
+}
+
+.cardPan{
+  background: rgb(231, 160, 8);
+  border: 2px solid rgb(231, 160, 8);
+  color: beige;
+}
+
+.cardCofee{
+  background:rgb(99, 40, 3) ;
+  border:  2px solid rgb(37, 15, 1);
+  color: beige;
+}
+
+.cardRestaurante{
+  background:rgb(142, 19, 2) ;
+  border:  2px solid rgb(142, 19, 2);
+  color: beige;
+}
+
+.cardJugos{
+  background: rgb(5, 130, 24);
+  border:  2px solid rgb(31, 214, 58);
+  color: beige;
+}
+
+
+
+
